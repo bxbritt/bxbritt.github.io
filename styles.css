@@ -483,76 +483,75 @@ h6{
     color: var(--color-4); 
   }
 
-/* mobile device formatting */
-@media (max-width: 390px) {
-    body {
-      margin: 20px;
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        border-radius: 5px;
     }
-  
-    h1 {
-      font-size: 35px; 
-    }
-  
-    h3, h2 {
-      font-size: 20px; 
-    }
-  
-    .navbar {
-      flex-direction: column; 
-      height: auto;
-    }
-  
-    .navbar .nav-list {
-      display: block;
-      padding: 0;
-    }
-  
+
     .nav-item {
-      font-size: 14px;
-      text-align: center;
-      padding: 10px;
+        margin: 10px 0;
+        text-align: center;
     }
-  
-    .divheader {
-      height: auto; 
-      padding: 10px;
+
+    .hamburger {
+        display: block;
     }
-  
-    .divbody {
-      margin-left: 10px;
-      margin-right: 10px;
-      padding-top: 10px;
+
+    .nav-list.show {
+        display: flex;
     }
-  
-    .innerbody-index, .innerbody-work, .innerbody-contact, .innerbody-ex, .innerbody-hobbies {
-      width: 100%; 
-      padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px;
     }
-  
-    .image-index img, .image-hobbies img, .image-work img, .image-ex, .image-contact-email, .image-contact-in, .image-contact-phone {
-      width: 100%;  
-      height: auto;
-      margin: 0;
+
+    .nav-item {
+        margin-left: 15px;
     }
-  
-    .footer {
-      padding: 20px;
-      font-size: 14px;
+
+    .nav-link {
+        font-size: 1.2em;
     }
-  
-    .footer-links {
-      display: block;
-      text-align: center;
+
+    .hamburger {
+        display: block;
     }
-  
-    .footer-links a {
-      margin: 10px 0;
-      font-size: 14px;
+}
+
+@media (min-width: 769px) {
+    .nav-list {
+        display: flex;
     }
-  
-    .spacer, .spacer-short {
-      height: 20px;  
+
+    .hamburger {
+        display: none;
     }
-  }
+
+    .nav-item {
+        margin-left: 30px;
+    }
+
+    .nav-link {
+        font-size: 1.2em;
+    }
+}
   
   
