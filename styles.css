@@ -502,7 +502,7 @@ h6{
     color: var(--color-4); 
 }
 
-/*to make navbar scroll-able on mobile */
+/* Mobile Navbar - Scrollable */
 .nav-list {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -538,88 +538,26 @@ h6{
         padding: 15px 0;
         font-size: 1.2em;
     }
-    .innerbody-hobbies {
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        padding: 0;
         width: 100%;
-        height: 200px;
     }
 
-    .innerbody-index {
-        width: 100%;
-        height: 250px;
+    .nav-item {
+        margin: 10px 0;
     }
 
-    .innerbody-ex {
-        width: 100%;
-        height: auto;
+    .nav-link {
+        text-align: center;
+        padding: 15px 0;
+        font-size: 1.2em;
     }
-
-    .innerbody-work {
-        width: 90%;
-        height: 350px;
-    }
-
-    .innerbody-contact {
-        width: 90%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .footer {
-        padding: 10px 0;
-        height: 10px;
-    }
-
-}
-@media screen and (max-width: 390px) {
-.navbar {
-    flex-direction: column;
-    padding:1px;
-}
-
-.nav-list {
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-}
-
-.nav-item {
-    margin: 10px 0;
-}
-
-.nav-link {
-    text-align: center;
-    padding: 15px 0;
-    font-size: 1.2em;
-}
-.innerbody-hobbies {
-    width: 100%;
-    height: 180px;
-}
-
-.innerbody-index {
-    width: 100%;
-    height: 220px;
-}
-
-.innerbody-ex {
-    width: 100%;
-    height: auto;
-}
-
-.innerbody-work {
-    width: 90%;
-    height: 300px;
-}
-
-.innerbody-contact {
-    width: 90%;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.footer {
-    padding: 8px 0;
-    height: 8px;
-}
-
 }
