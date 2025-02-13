@@ -483,38 +483,19 @@ h6{
     color: var(--color-4); 
   }
 
-  .hamburger {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .nav-list {
-        display: none;
-        flex-direction: column;
-        padding: 0;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: #333;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 200px;
-        border-radius: 5px;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     .nav-item {
-        margin: 10px 0;
-        text-align: center;
+        margin: 10px;
     }
 
-    .hamburger {
-        display: block;
-    }
-
-    .nav-list.show {
-        display: flex;
+    .nav-list {
+        max-width: 100%;
+        overflow-x: scroll;
     }
 }
 
@@ -530,19 +511,11 @@ h6{
     .nav-link {
         font-size: 1.2em;
     }
-
-    .hamburger {
-        display: block;
-    }
 }
 
 @media (min-width: 769px) {
     .nav-list {
         display: flex;
-    }
-
-    .hamburger {
-        display: none;
     }
 
     .nav-item {
@@ -553,5 +526,3 @@ h6{
         font-size: 1.2em;
     }
 }
-  
-  
