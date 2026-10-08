@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art | Brittany Benedict</title>
+    <meta name="description" content="Digital art by Brittany Benedict.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo" aria-label="Home">BB</a>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="art.html" class="nav-link active" aria-current="page">Art</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Art</h1>
+
+        <!-- To add a piece: put the image in images/art/ and add it to a list in the page. -->
+        <section class="section reveal catalog-block">
+            <div class="catalog-header">
+                <h2 class="section-title purple">Digital</h2>
+                <div class="catalog-controls">
+                    <button class="catalog-button catalog-prev" type="button" aria-label="Previous digital piece">&larr;</button>
+                    <button class="catalog-button catalog-next" type="button" aria-label="Next digital piece">&rarr;</button>
+                </div>
+            </div>
+            <div class="catalog">
+                    <figure class="catalog-item">
+                        <img src="images/art/amaya.jpg" alt="Digital portrait of a woman with glasses in profile against a colorful patchwork background" loading="lazy">
+                        <figcaption>Amaya</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/musical.jpg" alt="Abstract swirls of blue, purple, and gold ribbons with glowing circles over black and white streaks" loading="lazy">
+                        <figcaption>Musical</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/dark-lake.jpg" alt="Black and white piece of a winding river of light between dark shores" loading="lazy">
+                        <figcaption>Dark Lake</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/imposter.jpg" alt="Yellow worm-like creatures on an orange background, with one blue imposter among them" loading="lazy">
+                        <figcaption>Imposter</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/pain-full.jpg" alt="Moody portrait of a woman with curly hair and closed eyes in muted purple tones" loading="lazy">
+                        <figcaption>Pain-Full</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/og-snake.jpg" alt="Bright orange snake winding across a red background" loading="lazy">
+                        <figcaption>OG Snake</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/centered.jpg" alt="Pink and orange doodle patterns surrounding a soft glowing center" loading="lazy">
+                        <figcaption>Centered</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/spiral-dog.jpg" alt="Textured blue dog made of swirling strokes against a gold background" loading="lazy">
+                        <figcaption>Spiral Dog</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/rusty-paper.jpg" alt="Abstract texture in rusty brown and deep red tones" loading="lazy">
+                        <figcaption>Rusty Paper</figcaption>
+                    </figure>
+            </div>
+        </section>
+
+        <section class="section reveal catalog-block">
+            <div class="catalog-header">
+                <h2 class="section-title pink">Paintings</h2>
+                <div class="catalog-controls">
+                    <button class="catalog-button catalog-prev" type="button" aria-label="Previous paintings piece">&larr;</button>
+                    <button class="catalog-button catalog-next" type="button" aria-label="Next paintings piece">&rarr;</button>
+                </div>
+            </div>
+            <div class="catalog">
+                    <figure class="catalog-item">
+                        <img src="images/art/violet-hour.jpg" alt="Painting of a tree with purple blossoms silhouetted against a golden sunset" loading="lazy">
+                        <figcaption>Violet Hour</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/crown-of-petals.jpg" alt="Painting of a tree trunk under a large peach flower, with pink roses in the grass" loading="lazy">
+                        <figcaption>Crown of Petals</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/breakeven.jpg" alt="Painting of blue ocean water meeting a golden sandy shore" loading="lazy">
+                        <figcaption>Breakeven</figcaption>
+                    </figure>
+                    <figure class="catalog-item">
+                        <img src="images/art/magma.jpg" alt="Painting of a volcano erupting beside the ocean at sunset" loading="lazy">
+                        <figcaption>Magma</figcaption>
+                    </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>&copy; 2026 Brittany Benedict</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/brittany-benedict-414b60406" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/bxbritt" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:bbenedict912@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.catalog-block').forEach((block) => {
+            const catalog = block.querySelector('.catalog');
+            const prev = block.querySelector('.catalog-prev');
+            const next = block.querySelector('.catalog-next');
+
+            function step() {
+                const item = catalog.querySelector('.catalog-item');
+                return item ? item.offsetWidth + 20 : catalog.clientWidth;
+            }
+
+            function updateButtons() {
+                prev.disabled = catalog.scrollLeft <= 0;
+                next.disabled = catalog.scrollLeft + catalog.clientWidth >= catalog.scrollWidth - 1;
+            }
+
+            prev.addEventListener('click', () => catalog.scrollBy({ left: -step() }));
+            next.addEventListener('click', () => catalog.scrollBy({ left: step() }));
+            catalog.addEventListener('scroll', updateButtons);
+            window.addEventListener('resize', updateButtons);
+            window.addEventListener('load', updateButtons);
+            updateButtons();
+        });
+    </script>
+    <script>
+        document.documentElement.classList.add('js');
+        const revealItems = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach((item) => observer.observe(item));
+        } else {
+            revealItems.forEach((item) => item.classList.add('visible'));
+        }
+    </script>
+</body>
+</html>

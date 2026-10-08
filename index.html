@@ -1,90 +1,106 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brittany Benedict</title>
+    <meta name="description" content="Brittany Benedict, Computer Science student at New Mexico State University.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<html lang = "en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="styles.css">
-       
-    </head>
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo" aria-label="Home">BB</a>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="art.html" class="nav-link">Art</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  
-    <body>
-        
-
-        <div class="divheader">
-            <nav class="navbar">
-                <div class ="nav-left">
-                <div class = "logo">BB</div>
+    <main class="container">
+        <section class="hero">
+            <div class="headshot-ring">
+                <img class="headshot" src="images/headshot.jpg" alt="Brittany Benedict">
             </div>
-            
-            
-
-                <ul class="nav-list">
-                    <li class="nav-item" id="nav-home"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item" id="nav-work"><a href="work.html" class="nav-link">Work</a></li>
-                    <li class="nav-item" id="nav-ex"><a href="ex.html" class="nav-link">Experience</a></li>
-                    <li class="nav-item" id="nav-hobbies"><a href="hobbies.html" class="nav-link">Hobbies</a></li>
-                    <li class="nav-item" id="nav-contact"><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        
-        <div class = "spacer"></div>
-    
-
-        <div class = "divbody">
-
-           <div class = "namecontainer">
-                <h1 class="typing-animation">Hi, I'm Brittany Benedict</h1>
-                <h3> Welcome to my Page</h3>
-                  
-        </div>
-        <div class = "spacer-short"></div>
-
-        <div class = "arrow-index">
-            <img id="scroll-arrow" class="arrow-animation" src="https://openclipart.org/image/800px/311618">
-        </div>
-
-           <div class = "spacer"></div>
-
-            
-            
-            <div class = "innerbody-index">
-                
-                <div class = "text-container">
-                    <h2>About Me</h2>
-                <h3>I am 20 years old, from El Paso, and a student at NMSU studying Computer Science. I’m passionate about helping people and finding solutions, and I’m always seeking new ways to challenge myself and grow. </h3> 
-
+            <div>
+                <h1>Brittany Benedict</h1>
+                <p class="hero-title">Computer Science Student</p>
+                <p class="hero-detail">New Mexico State University | Graduating Fall 2026</p>
+                <div class="button-row">
+                    <a class="button primary" href="Brittany-Benedict-Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+                    <a class="button secondary" href="contact.html">Contact Me</a>
                 </div>
-                <div class = "image-index">
-                    <img src="https://iili.io/2mSOG0F.md.jpg" alt="2mSOG0F.md.jpg" border="0">
-                </div>
-                
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <p>I'm a Computer Science student at New Mexico State University from El Paso, TX. I have hands-on experience building a compiler and collaborating on an Agile team project, plus a background in teaching and technical support.</p>
+                <p>I'm strong in Java, Python, C, and C++, with a solid grounding in software testing, algorithms, and clear communication. I'm open to entry-level opportunities across software development, web development, databases, security, networking, and technical roles.</p>
+                <p>Outside of code, I enjoy software design, reading, and digital art. You can see some of my pieces on the <a href="art.html">Art page</a>.</p>
+            </div>
+        </section>
+
+        <section class="section reveal">
+            <h2 class="section-title blue">Currently</h2>
+            <div class="grid-2">
+                <article class="card card-row blue">
+                    <img class="card-logo" src="images/logos/nmsu.svg" alt="New Mexico State University logo">
+                    <div>
+                        <h3>Finishing my BA</h3>
+                        <p class="org">New Mexico State University</p>
+                        <p class="meta">Computer Science | Fall 2026</p>
+                    </div>
+                </article>
+                <article class="card card-row purple">
+                    <img class="card-logo dark" src="images/logos/serve.svg" alt="SERVE logo">
+                    <div>
+                        <h3>Server</h3>
+                        <p class="org">SERVE</p>
+                        <p class="meta">El Paso, TX | Present</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>&copy; 2026 Brittany Benedict</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/brittany-benedict-414b60406" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/bxbritt" target="_blank" rel="noopener">GitHub</a>
+                <a href="mailto:bbenedict912@gmail.com">Email</a>
+            </div>
         </div>
+    </footer>
 
-          </div>
-
-          <script>
-            document.getElementById('scroll-arrow').addEventListener('click', function() {
-                document.querySelector('.innerbody-index').scrollIntoView({ behavior: 'smooth' });
-            });
-        </script>
-
-<footer class="footer">
-    <div class="footer-content">
-      <p>-- 2025 Brittany Benedict --</p>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
-        <a href="https://github.com/bxbritt" target="_blank">GitHub</a>
-        <a href="ilovetexas123@gmail.com">Email</a>
-      </div>
-    </div>
-  </footer>
-    </body>
-
-
-
-  
-</html> 
+    <script>
+        document.documentElement.classList.add('js');
+        const revealItems = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            revealItems.forEach((item) => observer.observe(item));
+        } else {
+            revealItems.forEach((item) => item.classList.add('visible'));
+        }
+    </script>
+</body>
+</html>

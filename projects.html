@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Brittany Benedict</title>
-    <meta name="description" content="How to contact Brittany Benedict.">
+    <title>Projects | Brittany Benedict</title>
+    <meta name="description" content="Software projects by Brittany Benedict.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
@@ -18,39 +18,40 @@
             <ul class="nav-list">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="experience.html" class="nav-link">Experience</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="projects.html" class="nav-link active" aria-current="page">Projects</a></li>
                 <li><a href="art.html" class="nav-link">Art</a></li>
-                <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container">
-        <h1 class="page-title">Contact</h1>
+        <h1 class="page-title">Projects</h1>
 
         <section class="section reveal">
-            <div class="stack contact-list">
-                <a class="card contact-card" href="mailto:bbenedict912@gmail.com">
-                    <img class="contact-icon" src="images/icons/email.png" alt="">
-                    <div>
-                        <div class="contact-label">Email</div>
-                        <div class="contact-value">bbenedict912@gmail.com</div>
-                    </div>
-                </a>
-                <a class="card contact-card blue" href="https://www.linkedin.com/in/brittany-benedict-414b60406" target="_blank" rel="noopener">
-                    <img class="contact-icon" src="images/icons/linkedin.svg" alt="">
-                    <div>
-                        <div class="contact-label">LinkedIn</div>
-                        <div class="contact-value">brittany-benedict</div>
-                    </div>
-                </a>
-                <a class="card contact-card purple" href="https://github.com/bxbritt" target="_blank" rel="noopener">
-                    <img class="contact-icon" src="images/icons/github.png" alt="">
-                    <div>
-                        <div class="contact-label">GitHub</div>
-                        <div class="contact-value">github.com/bxbritt</div>
-                    </div>
-                </a>
+            <div class="grid-2">
+                <article class="card purple">
+                    <h3>Constellist</h3>
+                    <p class="meta">Team Project | Software Development</p>
+                    <p>A task-management app that visualizes your progress as constellations.</p>
+                    <ul>
+                        <li>Collaborated with a team to design and build the app.</li>
+                        <li>Used Agile methodology to plan and coordinate sprints, balancing feature development with team deadlines.</li>
+                        <li>Contributed to design, implementation, and documentation across the software development lifecycle.</li>
+                    </ul>
+                </article>
+                <article class="card blue">
+                    <h3>Compiler</h3>
+                    <p class="meta">Course Project</p>
+                    <p>A compiler for a custom language, built from the ground up.</p>
+                    <ul>
+                        <li>Implemented lexical analysis, parsing, abstract syntax tree (AST) construction, and code generation.</li>
+                        <li>Applied ALGOL-C language concepts and compiler design principles to translate source code into executable output.</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="button-row">
+                <a class="button secondary" href="https://github.com/bxbritt" target="_blank" rel="noopener">More on GitHub</a>
             </div>
         </section>
 
